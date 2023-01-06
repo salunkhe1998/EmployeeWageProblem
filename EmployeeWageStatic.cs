@@ -9,18 +9,15 @@ namespace EmployeeWageProblem
 
     public class EmployeeWageStatic
     {
+        const int Is_Full_Time = 1;
+        const int Is_Part_Time = 2;
 
-
-        public static void Employee()
+        public static void Employee(string company, int Emp_Rate_Per_Hr, int Max_Days_In_Month, int Max_Hrs_In_Month)
         {
 
-            const int Is_Full_Time = 1;
-            const int Is_Part_Time = 2;
-            const int Emp_Rate_Per_Hr = 20;
-            const int Max_Days_In_Month = 20;
-            const int Max_Hrs_In_Month = 100;
-
             int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
+
+            Console.WriteLine(company);
 
             while (totalEmpHrs <= Max_Hrs_In_Month && totalWorkingDays < Max_Days_In_Month)
             {
